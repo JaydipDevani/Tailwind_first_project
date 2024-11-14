@@ -1,0 +1,138 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.w-30-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.w-30-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.after-border {
+    position : relative;
+}
+
+.after-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.after-border:hover::after {
+    transform: scaleX(1);
+}
+
+.after-round {
+    position: relative;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+}
+
+.after-round::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.1;
+}
+
+.after-services {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.after-services::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #333;
+    opacity: 0.1;
+}
+
+.arrow-hover {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-hover .arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-hover:hover .arrow {
+    right: 10px;
+}
+
+.spin-animation {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-img {
+    background-image: url('path/to/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.button-hover-1 {
+    transition: all 0.3s ease-in-out;
+}
+
+.button-hover-1:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.button-hover-2 {
+    transition: all 0.3s ease-in-out;
+}
+
+.button-hover-2:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}

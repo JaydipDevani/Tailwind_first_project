@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hed-img{
+    background-image: url('https://images.unsplash.com/photo-1490129375591-2658b3e2ee50?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2244&q=80');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    /* opacity: 0.7; */
+    /* z-index: -1; */
+}
+.hidden input{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+.hidden input::placeholder{
+    color: white;
+}
+.pointer-events-none svg{
+    color: white;
+}
+/* .op{
+    background-color: rgba(120, 53, 15, var);
+    z-index: 1;
+} */
+.font-display{
+    font-family: Playfair Display, serif;
+}
